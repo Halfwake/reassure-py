@@ -3,12 +3,12 @@
 from setuptools import setup
 
 setup(
-  name = 'reassure-py',
+  name = 'reassure',
   version = '0.0.1',
   description = 'Error coping library.',
   author = 'Andrew Dudash',
   author_email = 'drewdudash@gmail.com',
-  packages = ['reassure-py'],
+  packages = ['reassure'],
 
   long_description = "A program for customizing Python error messages to reduce the mental load of debugging.",
   keywords = 'joke reassure reassure-py reassure.py humor',
