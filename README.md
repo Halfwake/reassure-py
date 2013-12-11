@@ -27,6 +27,8 @@ ZeroDivisionError: integer division or modulo by zero
 
 Crawling In My Skin Message (It also opens up a music video with your browser.)
 ```
+>>> import reassure
+>>> reassure.set_hook_by_key('greenday')
 >>> 3 / 0
 I've tried so hard
   And got so far
