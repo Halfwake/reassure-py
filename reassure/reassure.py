@@ -5,7 +5,7 @@ import random
 OLD_DOC = sys.excepthook.__doc__
 
 def doc_check(handler):
-    'Will give the handler the __doc__ value of the original sys.excepthook, if it has a false value for its current __doc__ value. (e.g. "", None, False)"
+    'Will give the handler the __doc__ value of the original sys.excepthook, if it has a false value for its current __doc__ value. (e.g. \"\", None, False)"
     if not handler.__doc__:
         handler.__doc__ = OLD_DOC
     return handler
