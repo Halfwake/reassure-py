@@ -25,3 +25,20 @@ ZeroDivisionError: integer division or modulo by zero
 >>>
 ```
 
+Crawling In My Skin Message (It also opens up a music video with your browser.)
+```
+>>> 3 / 0
+I've tried so hard
+  And got so far
+    But in the end
+      It doesn't even matter
+      I had to fall
+    To lose it all
+  But in the end
+It doesn't even matter
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: integer division or modulo by zero
+>>>
+```

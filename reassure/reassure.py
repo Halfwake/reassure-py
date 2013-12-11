@@ -1,6 +1,7 @@
 import sys
 import traceback
 import random
+import webbrowser
 
 OLD_DOC = sys.excepthook.__doc__
 
@@ -16,8 +17,8 @@ def set_hook(handler, do_doc_check = True):
         handler = doc_check(handler)
     sys.excepthook = handler
 
-def print_err(message):
-    print >>sys.stderr, message
+def print_err(msg):
+  sys.stderr.write(msg + '\n')
 
 def print_tb(tb):
     print_err('Traceback (most recent call last):')
@@ -48,6 +49,24 @@ def _lambda(exc, value, tb):
     default_hook_test(exc, value, tb)
     print_err(closer)
 HOOKS['chipper'] = _lambda
+
+def _lambda(exc, value, tb):
+  print_err('''\
+I've tried so hard
+  And got so far
+    But in the end
+      It doesn't even matter
+      I had to fall
+    To lose it all
+  But in the end
+It doesn't even matter
+''')
+  default_hook_test(exc, value, tb)
+  greenday_video = 'http://www.youtube.com/watch?v=ZP-bAlOJzWc'
+  webbrowser.open(greenday_video)
+HOOKS['greenday'] = _lambda
+  
+
 
 def set_hook_by_key(key):
     'Sets the new excepthook to the corresponding HOOKS value.'
