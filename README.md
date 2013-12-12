@@ -15,7 +15,7 @@ ZeroDivisionError: integer division or modulo by zero
 Good Error Message
 ```
 >>> import reassure
->>> reassure.set_hook_by_key('chipper')
+>>> reassure.hooks.set_hook('chipper')
 >>> 3 / 0
 Oh no! ;~;
 Traceback (most recent call last):
@@ -28,7 +28,7 @@ ZeroDivisionError: integer division or modulo by zero
 Crawling In My Skin Message (It also opens up a music video with your browser.)
 ```
 >>> import reassure
->>> reassure.set_hook_by_key('greenday')
+>>> reassure.hooks.set_hook('greenday')
 >>> 3 / 0
 I've tried so hard
   And got so far
